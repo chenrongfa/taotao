@@ -1,0 +1,4 @@
+127.0.0.1 - - [11/Jun/2017:14:06:08 +0800] "GET /taotao-web/ HTTP/1.1" 404 973 http-bio-8080-exec-1 20
+127.0.0.1 - - [11/Jun/2017:14:06:18 +0800] "GET /taotao-web/index.jsp HTTP/1.1" 404 991 http-bio-8080-exec-2 4
+127.0.0.1 - - [11/Jun/2017:14:06:27 +0800] "GET /index.jsp HTTP/1.1" 200 278 http-bio-8080-exec-3 382
+127.0.0.1 - - [11/Jun/2017:14:59:50 +0800] "GET /index.jsp HTTP/1.1" 200 278 http-bio-8080-exec-1 351

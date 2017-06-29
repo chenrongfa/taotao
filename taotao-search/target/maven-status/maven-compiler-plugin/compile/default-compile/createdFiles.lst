@@ -1,0 +1,11 @@
+com\taotao_search\bean\Msg.class
+com\taotao_search\controller\ItemSearchController.class
+com\taotao_search\utils\JsonUtils.class
+com\taotao_search\bean\ItemSearchResult.class
+com\taotao_search\service\SolorServiceImpl.class
+com\taotao_search\service\ItemSearchService.class
+com\taotao_search\service\SolorService.class
+com\taotao_search\bean\ItemSearch.class
+com\taotao_search\controller\CommonController.class
+com\taotao_search\mapper\ItemSearchMapper.class
+com\taotao_search\service\ItemSearchServiceImpl.class

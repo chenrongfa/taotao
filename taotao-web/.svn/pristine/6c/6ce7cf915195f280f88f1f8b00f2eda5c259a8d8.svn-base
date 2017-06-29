@@ -1,0 +1,28 @@
+package com.taotao.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CommonController {
+/**
+ *  go 首页
+ * @return
+ */
+	@RequestMapping("/")
+	public String goToIndex(){
+		return "index";
+	}
+	/**
+	 *  
+	 * @param page index想要去的page
+	 * @return
+	 */
+	@RequestMapping("/{pages}")
+	public String goPage(@PathVariable("pages") String page){
+		
+		
+		return page;
+	}
+}

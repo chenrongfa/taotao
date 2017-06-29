@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.taotao_search.mapper.ItemSearchMapper">
+	<resultMap id="BaseResultMap" type="com.taotao_search.bean.ItemSearch">
+		<id column="id" jdbcType="BIGINT" property="id" />
+		<result column="title" jdbcType="VARCHAR" property="item_title" />
+		<result column="sell_point" jdbcType="VARCHAR" property="item_sell_point" />
+		<result column="price" jdbcType="BIGINT" property="item_price" />
+		<result column="image" jdbcType="VARCHAR" property="item_image" />
+		<result column="name" jdbcType="VARCHAR" property="item_category_name" />
+		<result column="item_desc" jdbcType="VARCHAR" property="item_desc" />
+	</resultMap>
+	<select id="getItemSearchList" resultMap="BaseResultMap">
+		SELECT
+		t.`id`,
+		title,
+		image,
+		sell_point,
+		price,
+		c.name,
+		item_desc
+		FROM
+		tb_item t,
+		tb_item_cat c ,
+		tb_item_desc d
+		WHERE t.`cid` =c.`id` AND t.`id` =d.`item_id`
+	</select>
+</mapper>
