@@ -1,6 +1,6 @@
 # taotao
 启动 所有的模块项目 和环境
-打开 redis 和image 图片
+打开 redis 和image 图片 服务器 (虚拟机)
 ![](https://github.com/chenrongfa/taotao/raw/master/打开redis和image图片服务器.png)
 打开solr 搜索引擎
 ![](https://github.com/chenrongfa/taotao/raw/master/打开solr.png)
